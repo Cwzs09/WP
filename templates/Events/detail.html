@@ -1,0 +1,8 @@
+<h1>{{ event }}</h1>
+<h3>Event Name : {{ event.Event_Name }}</h3>
+<h3>Organizer Club:{{ event.Organizer_Club }}</h3>
+<h3>Event Date:{{ event.Event_Date }}</h3>
+
+{% if error_message %}
+    <p><strong>{{ error_message }}</strong></p>
+{% endif %}
