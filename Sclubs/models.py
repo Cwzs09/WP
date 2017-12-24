@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 from django.db import models
 
+
 class University(models.Model):
     University_Name = models.CharField(max_length=150)
 

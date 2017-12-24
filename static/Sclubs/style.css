@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500');
+
+html, body {
+    font-family: 'Quicksand', serif;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    margin-bottom: -25px;
+    padding-bottom: 25px;
+}
+
+.navbar-default {
+    font-size: 1.15em;
+    font-weight: 500;
+    background-color: #219bff;
+    padding: 3px;
+    border: 0px;
+    border-radius: 0px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    transition: 0.2s;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #cce7ff;
+
+}
+
+.navbar-default .navbar-brand {
+    color: #002433;
+    transition: 0.2s;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+    background-color: #004059;
+    color: white;
+}
+
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #002433;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+
+.dropdown-menu {
+    background-color: #004059;
+    color: white;
+    border: 0px;
+    border-radius: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.dropdown-menu>li>a {
+    background-color: #004059;
+    color: white;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    background-color: #004059;
+    color:white;
+}
+
+.dropdown-menu .divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #003246;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #ffffff;
+}
+
+@media (max-width: 767px) {
+    .dropdown-menu>li>a {
+        background-color: #006b96;
+        color: #ffffff;
+    }
+    .dropdown-menu>li>a:hover {
+        color: #ffffff;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+        color: #ffffff;
+        background-color: transparent;
+    }
+
+    .dropdown-menu .divider {
+        height: 1px;
+        margin: 9px 0;
+        overflow: hidden;
+        background-color: #005577;
+    }
+} /* END Media Query */
+
+
+/* Cards */
+
+.seperator {
+    display: block;
+    width: 25%;
+    background-color: lightgray;
+    height: 1px;
+    margin: 5px auto;
+}
+
+.club-card {
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px lightgray;
+    padding: 6px;
+    text-align: center;
+}
+
+.club-card h4 {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.club-name {
+    color: #219bff;
+    display: block;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.club-name:hover {
+    color: #004c91;
+    text-decoration: none;
+}
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #004c91;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+}
+

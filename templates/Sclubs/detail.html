@@ -1,12 +1,16 @@
-<img src="{{ club.Club_Logo }}">
+{% extends "base.html" %}
 
-<h1>{{ club }}</h1>
-<h3>University : {{ club.University }}</h3>
-<h3>Chairman of the club:{{ club.Chairman }}</h3>
-<h3>Vice Chairman of the club:{{ club.Vice_Chairman }}</h3>
-<h3>E-mail:{{ club.Club_email }}</h3>
-<h3>Club genre:{{ club.Genre }}</h3>
+{% block content %}
+    <img src="{{ club.Club_Logo }}">
 
-{% if error_message %}
-    <p><strong>{{ error_message }}</strong></p>
-{% endif %}
+    <h1>{{ club }}</h1>
+    <h3>University : {{ club.University }}</h3>
+    <h3>Chairman of the club:{{ club.Chairman }}</h3>
+    <h3>Vice Chairman of the club:{{ club.Vice_Chairman }}</h3>
+    <h3>E-mail:{{ club.Club_email }}</h3>
+    <h3>Club genre:{{ club.Genre }}</h3>
+
+    {% if error_message %}
+        <p><strong>{{ error_message }}</strong></p>
+    {% endif %}
+{% endblock %}

@@ -1,10 +1,28 @@
-{% if all_events %}
-    <h3>All Events:</h3>
-<ul>
-    {% for event in all_events %}
-    <li><a href="{% url 'event_detail' event.id  %}">{{ event.Event_Name }}</a></li>
-    {% endfor  %}
-</ul>
-{% else %}
-<h3>There is not an Event</h3>
-{% endif %}
+{% extends "base.html" %}
+
+
+{% block content %}
+    {% if all_events %}
+        <div class="container">
+            <h3>All Events:</h3>
+            {% for event in all_events %}
+                <div class="col-md-4" style="margin-bottom: 25px;">
+                    <div class="club-card">
+                        <img class="club-logo" src="http://lorempixel.com/200/200/" alt="Logo">
+                        <a class="club-name" href="{% url 'event_detail' event.id  %}">{{ event.Event_Name }}</a>
+                        <span class="seperator"></span>
+                        <h4>Organizer Club</h4>
+                        <span>{{ event.Organizer_Club}}</span>
+                        <h4>Speaker</h4>
+                        <span>{{ event.Event_Speaker}}</span>
+                        <h4>Date</h4>
+                        <span>{{ event.Event_Date}}</span>
+
+                </div>
+                </div>
+            {% endfor  %}
+        </div>
+    {% else %}
+        <h3>There is no Event</h3>
+    {% endif %}
+{% endblock %}
