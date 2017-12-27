@@ -52,7 +52,7 @@ def details(request, club_id):
     context = {'club': club, "errors": form_errors,
                "values": form_values}
 
-    return render(request, 'Sclubs/detail.html', {context})
+    return render(request, 'Sclubs/detail.html', context)
 
 # user accounts
 
